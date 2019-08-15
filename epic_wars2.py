@@ -106,8 +106,8 @@ class Warrior:
         self.unitname = unitname
         self.alive = True
         self.move = True
-        self.direction = 'direct'
-        # self.direction = random.choice(('chaotic', 'direct'))
+        # self.direction = 'direct'
+        self.direction = random.choice(('chaotic', 'direct'))
         self.step_x = None
         self.step_y = None
         self.infight = False
@@ -234,8 +234,9 @@ def main():
     priziv(army, 3)
     army = random.choice(["red", "green", "blue", "cyan", "yellow", "magenta"])
     priziv(army, 3)
-    army = random.choice(["red", "green", "blue", "cyan", "yellow", "magenta"])
-    priziv(army, 3)
+    # army = random.choice(["red", "green", "blue", "cyan", "yellow", "magenta"])
+    # priziv(army, 3)
+
 
 ##########################################################
 
@@ -246,7 +247,7 @@ if __name__ == '__main__':
 
     # PRIZIV_LIMIT = (1, 1)
 
-    FIGURE_SIZE = 60
+    FIGURE_SIZE = 50
 
     # START_COORD_LIMIT = 100
 

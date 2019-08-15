@@ -60,7 +60,7 @@ def json_structure(data, pref='', depth=0):
 
 def make_key_list(data, pref='', depth=0):
     print_value = False
-    global keys_arr
+    keys_arr = []
     for i in data:
         # print(i, data[i])
         if type(data[i]) == dict:
@@ -79,13 +79,13 @@ def make_key_list(data, pref='', depth=0):
                     print(''.rjust(depth), tmp)
                 if tmp not in keys_arr:
                     keys_arr.append(tmp)
+    pprint.pprint(keys_arr)
 
-
-# keys_arr = []
+#
 # for i in datajson:
 #     make_key_list(i)
 #     print()
-# print(keys_arr)
+#
 
 # ['id', 'group_id', 'class', 'rating', 'price', 'weapon_mode', 'missile_type', 'name', 'belongs_to', 'ed_id', 'ed_symbol', 'game_context_id', 'ship', '_group_id', '_group_category_id', '_group_name', '_group_category', 'mass', 'dps', 'power', 'damage', 'ammo', 'range_km', 'efficiency', 'power_produced', 'duration', 'cells', 'recharge_rating', 'capacity', 'count', 'range_ls', 'rate', 'bins', 'additional_armour', 'vehicle_count']
 
@@ -94,7 +94,7 @@ def make_key_list(data, pref='', depth=0):
 # типы значений для всех ключей на всю глубину
 
 def make_type_key_list(data, pref='', depth=0):
-    global keys_arr
+    keys_arr = {}
     for i in data:
         # print(i, data[i], type(data[i]))
         if type(data[i]) == dict:
@@ -120,7 +120,8 @@ def make_type_key_list(data, pref='', depth=0):
                 tmptype = type(data[i])
                 if tmptype not in keys_arr[tmp]:
                     keys_arr[tmp].append(tmptype)
-
+    print()
+    pprint.pprint(keys_arr)
 
 # keys_arr = {}
 # #
