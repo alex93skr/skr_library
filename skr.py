@@ -25,5 +25,14 @@ def everify(n, answ):
     # return None
     # return True if str(answ) == str(sol.get(n)) else False
 
+#############################################################
+
+
+def thread_send(self, func, *arg, **keyw):
+    '''асинхронная запись в БД'''
+    threading_send_lock.acquire()
+    func(*arg, **keyw)
+    threading_send_lock.release()
+
 
 #############################################################
