@@ -114,7 +114,7 @@ def main():
 
 if __name__ == '__main__':
 
-    priziv_limit = (1, 3)
+    priziv_limit = (100000, 100001)
     hp_limit = (80, 100)
 
     main()

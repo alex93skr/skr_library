@@ -9,10 +9,12 @@ import requests
 from fake_headers import Headers
 from bs4 import BeautifulSoup
 
-def fake_headers1():
-    return Headers(headers=True).generate()
 
 ###############################################################
+
+
+def fake_headers1():
+    return Headers(headers=True).generate()
 
 
 def proxy_https_makearr(url, total=1000):
@@ -43,6 +45,7 @@ def proxy_https_makearr(url, total=1000):
     print('proxy checked:', count)
     print('added to the list:', len(proxy_arr))
     return proxy_arr
+
 
 # proxy_https_makearr('https://free-proxy-list.net', 50)
 
@@ -75,6 +78,7 @@ arr = proxy_https_makearr('https://free-proxy-list.net', 100)
 print()
 proxy_check_bot_arr(arr)
 
+
 # good_proxy_to_tlg_api = ['103.221.254.2:59905', '202.57.47.202:56840', '193.242.177.105:53281']
 
 
@@ -82,6 +86,8 @@ proxy_check_bot_arr(arr)
 # test = requests.get(boturl, proxies={'https': 'https://66.7.113.39:3128'}, timeout=5)
 # print(test.text)
 # print(test.json()['ok'])
+
+
 
 ###############################################################
 
@@ -126,7 +132,6 @@ def proxy_check_arr(arr, time=3):
     print('proxy =', proxy_check)
     return proxy_check
 
-
 # arr = proxy_https_makearr('https://free-proxy-list.net', 50)
 # arr = proxy_https_makearr('https://www.us-proxy.org', 50)
 # arr = proxy_https_makearr('https://free-proxy-list.net/uk-proxy.html', 50)
@@ -146,16 +151,5 @@ def proxy_check_arr(arr, time=3):
 
 
 
+
 ###############################################################
-
-
-# random_headers = {
-#     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
-#     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#     'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-#     'Accept-Encoding': 'none',
-#     'Accept-Language': 'en-US,en;q=0.8',
-#     'Connection': 'keep-alive'
-# }
-
-
