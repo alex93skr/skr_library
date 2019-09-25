@@ -27,11 +27,11 @@ user_hash = None
 url = 'http://telegram.org.ru/10664-boobs-master.html'
 
 conn = psycopg2.connect(
-    dbname='de2hks5oomsqov',
-    user='sgtggvoxppwgbx',
-    password='43e54ae9cc631e3a64eb030dcedc821c594077c5276d187fe1f567fb4d15c7b3',
-    host='ec2-46-137-91-216.eu-west-1.compute.amazonaws.com',
-    sslmode='require'
+    dbname='d5d2079cgeblj3',
+    user='fzzgiynifzdxbs',
+    password='c8764f4669fc42774110fc08bb1ed91d608bb98c540d79e92affd0912396efd1',
+    host='ec2-176-34-183-20.eu-west-1.compute.amazonaws.com',
+    # sslmode='require'
 )
 
 
