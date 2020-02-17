@@ -1,4 +1,3 @@
-# !/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 ##########################################################
@@ -353,10 +352,10 @@ def main():
 
     # print(list(all_armys["cyan"].warriors.keys()))
 
+
 FIGURE_SIZE1 = 10
 
 print(FIGURE_SIZE1)
-
 
 ##########################################################
 
