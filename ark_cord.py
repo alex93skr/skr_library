@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#############################################################
 import sys
 from PIL import Image
 import pytesseract
@@ -17,9 +15,11 @@ from PIL import ImageFont
 #############################################################
 
 def main():
-    print(sys.argv[1])
+    # print(sys.argv[1])
 
-    with open(sys.argv[1], "rb") as f:
+    file_in = 'D:\\nvidia\\ARK  Survival Evolved\\1.png'
+
+    with open(file_in, "rb") as f:
         image_bytes = f.read()
 
     image = Image.open(io.BytesIO(image_bytes))
